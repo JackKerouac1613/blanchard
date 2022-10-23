@@ -32,32 +32,32 @@
                             <div class="header-top-menu">
                                 <ul class="header-top-list">
                                     <li class="header-top-list__item">
-                                        <a href="#" class="header-top-list__link">                                
+                                        <a href="#about" class="header-top-list__link">                                
                                             О нас
                                         </a>
                                     </li>
                                     <li class="header-top-list__item">
-                                        <a href="#" class="header-top-list__link">
+                                        <a href="#gallery" class="header-top-list__link">
                                             Галерея
                                         </a>
                                     </li>
                                     <li class="header-top-list__item">
-                                        <a href="#" class="header-top-list__link">
+                                        <a href="#catalog" class="header-top-list__link">
                                             Каталог
                                         </a>
                                     </li>
                                     <li class="header-top-list__item">
-                                        <a href="#" class="header-top-list__link">
+                                        <a href="#events" class="header-top-list__link">
                                             События
                                         </a>
                                     </li>
                                     <li class="header-top-list__item">
-                                        <a href="#" class="header-top-list__link">
+                                        <a href="#projects" class="header-top-list__link">
                                             Проекты
                                         </a>
                                     </li>
                                     <li class="header-top-list__item">
-                                        <a href="#" class="header-top-list__link">
+                                        <a href="#contacts" class="header-top-list__link">
                                             Контакты
                                         </a>
                                     </li>
@@ -205,7 +205,7 @@
                             Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных
                             плановых заданий создаёт предпосылки для&nbsp;новых предложений
                         </p>
-                        <button class="hero__btn">Подписаться на рассылку</button>
+                        <a href ="#map" class="hero__btn">Подписаться на рассылку</a>
                     </div>
                 </div>
             </section>
@@ -219,7 +219,7 @@
                 </div>
             </div>
         </div>
-        <section class="about">
+        <section id="about" class="about">
             <div class="container">
                 <div class="about__content">
                     <h2 class="title about__title">О нас</h2>
@@ -232,35 +232,35 @@
                 </div>
             </div>
         </section>
-        <section class="gallery">
+        <section id="gallery" class="gallery">
             <div class="container">
-                <div class="gallery__content">
-                    <div class="gallery__content-left">
-                        <div class="gallery__content-left-top">
-                            <h2 class="title gallery__title">Галерея</h2>
-                            <p class="gallery__text">Фильтр:</p>
+                <div class="gallery-content">
+                    <div class="gallery-content-left">
+                        <div class="gallery-content-left-top">
+                            <h2 class="title gallery-content-left-top__title">Галерея</h2>
+                            <p class="gallery-content-left-top__text">Фильтр:</p>
                             <select id="selectCustom">
-                                <option value="" class="gallery__select__item">Живопись</option>
-                                <option class="gallery__select__item">Рисунок</option>
-                                <option class="gallery__select__item">Скульптура</option>
+                                <option value="" class="gallery-content-left-top__item">Живопись</option>
+                                <option class="gallery-content-left-top__item">Рисунок</option>
+                                <option class="gallery-content-left-top__item">Скульптура</option>
                             </select>
                         </div>
-                        <ul class="gallery__list">
-                            <li class="gallery__item">
+                        <ul class="gallery-list">
+                            <li class="gallery-item">
                                 <label for="checkbox-1" class="checkbox-label">
                                 <input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom-checkbox">
                                 <span class="visibile-checkbox"></span>
                                 <span class="text check-text">XIX век</span>
                                 </label>
                             </li>
-                            <li class="gallery__item">
+                            <li class="gallery-item">
                                 <label for="checkbox-2" class="checkbox-label">
                                 <input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom-checkbox">
                                 <span class="visibile-checkbox"></span>
                                 <span class="text check-text">XX век</span>
                                 </label>
                             </li>
-                            <li class="gallery__item">
+                            <li class="gallery-item">
                                 <label for="checkbox-3" class="checkbox-label">
                                 <input type="checkbox" name="checkbox-3" id="checkbox-3" class="custom-checkbox">
                                 <span class="visibile-checkbox"></span>
@@ -269,59 +269,59 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="test-swiper">
-                        <div class="test-navigation">
-                            <button class="nav-btn test-prev" aria-label="К предыдущему слайду"></button>
-                            <div class="test-pagination"></div>
-                            <button class="nav-btn test-next" aria-label="К следующему слайду"></button>
+                    <div class="gallery-swiper">
+                        <div class="gallery-navigation">
+                            <button class="nav-btn gallery-prev" aria-label="К предыдущему слайду"></button>
+                            <div class="gallery-pagination"></div>
+                            <button class="nav-btn gallery-next" aria-label="К следующему слайду"></button>
                         </div>
-                        <div class="swiper-container slides-container">
+                        <div class="swiper-container gallery-slides-container">
                           <div class="swiper-wrapper">
-                                <a class="swiper-slide test-slide" href="#">
+                                <a class="swiper-slide gallery-slide" href="#">
                                     <picture>
                                         <source srcset="img/gallery-pic-1-568px.jpg" media="(max-width: 580px)">
                                         <source srcset="img/gallery-pic-1-960px.jpg" media="(max-width: 960px)">
                                         <source srcset="img/gallery-pic-1-1200px.jpg" media="(max-width: 1360px)">
-                                        <img class="test-image" src="img/gallery-pic-1.jpg" alt="">
+                                        <img class="gallery-image" src="img/gallery-pic-1.jpg" alt="">
                                     </picture>
                                 </a>
-                                <a class="swiper-slide test-slide" href="#">
+                                <a class="swiper-slide gallery-slide" href="#">
                                     <picture>
                                         <source srcset="img/gallery-pic-2-568px.jpg" media="(max-width: 580px)">
                                         <source srcset="img/gallery-pic-2-960px.jpg" media="(max-width: 960px)">
                                         <source srcset="img/gallery-pic-2-1200px.jpg" media="(max-width: 1360px)">
-                                        <img class="test-image" src="img/gallery-pic-2.jpg" alt="">
+                                        <img class="gallery-image" src="img/gallery-pic-2.jpg" alt="">
                                     </picture>
                                 </a>
-                                <a class="swiper-slide test-slide" href="#">
+                                <a class="swiper-slide gallery-slide" href="#">
                                     <picture>
                                         <source srcset="img/gallery-pic-3-568px.jpg" media="(max-width: 580px)">
                                         <source srcset="img/gallery-pic-3-960px.jpg" media="(max-width: 960px)">
                                         <source srcset="img/gallery-pic-3-1200px.jpg" media="(max-width: 1360px)">
-                                        <img class="test-image" src="img/gallery-pic-3.jpg" alt="">
+                                        <img class="gallery-image" src="img/gallery-pic-3.jpg" alt="">
                                     </picture>
                                 </a>
-                                <a class="swiper-slide test-slide" href="#">
+                                <a class="swiper-slide gallery-slide" href="#">
                                     <picture>
                                         <source srcset="img/gallery-pic-4-568px.jpg" media="(max-width: 580px)">
                                         <source srcset="img/gallery-pic-4-960px.jpg" media="(max-width: 960px)">
                                         <source srcset="img/gallery-pic-4-1200px.jpg" media="(max-width: 1360px)">
-                                        <img class="test-image" src="img/gallery-pic-4.jpg" alt="">
+                                        <img class="gallery-image" src="img/gallery-pic-4.jpg" alt="">
                                     </picture>
                                 </a>
-                                <a class="swiper-slide test-slide" href="#">
+                                <a class="swiper-slide gallery-slide" href="#">
                                         <picture>
                                         <source srcset="img/gallery-pic-5-568px.jpg" media="(max-width: 580px)">
                                         <source srcset="img/gallery-pic-5-960px.jpg" media="(max-width: 960px)">
                                         <source srcset="img/gallery-pic-5-1200px.jpg" media="(max-width: 1360px)">
-                                        <img class="test-image" src="img/gallery-pic-5.jpg" alt="">
+                                        <img class="gallery-image" src="img/gallery-pic-5.jpg" alt="">
                                         </picture>
                                 </a>
-                                <a class="swiper-slide test-slide" href="#">
+                                <a class="swiper-slide gallery-slide" href="#">
                                     <picture>
                                         <source srcset="img/gallery-pic-6-960px.jpg" media="(max-width: 960px)">
                                         <source srcset="img/gallery-pic-6-1200px.jpg" media="(max-width: 1360px)">
-                                        <img class="test-image" src="img/gallery-pic-6.jpg" alt="">
+                                        <img class="gallery-image" src="img/gallery-pic-6.jpg" alt="">
                                     </picture>
                                 </a>
                             </div>
@@ -330,49 +330,49 @@
                 </div>
             </div>
         </section>
-        <section class="catalog">
+        <section id="catalog" class="catalog">
             <div class="container">
-                <div class="catalog__content">
-                    <div class="catalog__content-top">
-                        <h2 class="title catalog__title">Каталог</h2>
-                        <p class="text catalog__text">
+                <div class="catalog-content">
+                    <div class="catalog-content-top">
+                        <h2 class="title catalog-content-top__title">Каталог</h2>
+                        <p class="text catalog-content-top__text">
                             Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. 
                             Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и&nbsp;по&nbsp;сей день остаются уделом либералов, 
                             которые жаждут быть функционально разнесены на&nbsp;независимые элементы.
                         </p>
                     </div>
-                    <div class="catalog__content-bottom">
-                        <div class="catalog__content-bottom-left">
-                            <div class="catalog__wrapper catalog__wrapper--active" data-target="eleven">
-                                <div class="catalog__wrapper-content">
-                                    <picture>
+                    <div class="catalog-content-bottom">
+                        <div class="catalog-content-bottom-left">
+                            <div class="catalog-content-bottom-left-wrapper catalog-content-bottom-left-wrapper--active" data-target="eleven">
+                                <div class="catalog-content-bottom-left-wrapper-content">
+                                    <picture class="catalog-content-bottom-left-picture">
                                         <source srcset="img/catalog-pic-1-960px.jpg" media="(max-width: 960px)">
                                         <source srcset="img/catalog-pic-1-1360px.jpg" media="(max-width: 1360px)">
-                                        <img class="catalog__img" src="img/catalog-pic.jpg" alt="Художник">
+                                        <img class="catalog-content-bottom-left__img" src="img/catalog-pic.jpg" alt="Художник">
                                     </picture>
-                                    <h3 class="title-low catalog__content-bottom-left__title">Доменико Гирландайо</h3>
-                                    <span class="catalog__content-bottom-left__date">2 июня 1448-11 января 1494</span>
-                                    <p class="text catalog__content-bottom-left__text">
+                                    <h3 class="title-low catalog-content-bottom-left__title">Доменико Гирландайо</h3>
+                                    <span class="catalog-content-bottom-left__date">2 июня 1448-11 января 1494</span>
+                                    <p class="text catalog-content-bottom-left__text">
                                         Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, 
                                         где юный Микеланджело в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых выпукло, со&nbsp;всевозможными подробностями показана домашняя жизнь 
                                         библейских персонажей (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции в&nbsp;костюмах того времени).
                                     </p>
                                 </div>
                             </div>
-                            <div class="catalog__wrapper" data-target="twelve">
-                                <div class="catalog__wrapper-content">
+                            <div class="catalog-content-bottom-left-wrapper" data-target="twelve">
+                                <div class="catalog-content-bottom-left-wrapper-content">
                                     <img class="catalog__img" src="img/catalod-pic-2.jpg" alt="Художник">
-                                    <h3 class="title-low catalog__content-bottom-left__title">Что мы о нем знаем?</h3>
-                                    <p class="text catalog__content-bottom-left__text">
+                                    <h3 class="title-low catalog-content-bottom-left__title">Что мы о нем знаем?</h3>
+                                    <p class="text catalog-content-bottom-left__text">
                                         Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
                                     </p>
-                                    <a href="#" class="catalog__wrapper-link">В галерею</a>
+                                    <a href="#" class="catalog-content-bottom-left-wrapper__link">В галерею</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="catalog__content-bottom-right">
-                            <ul class="catalog__list accordion">
-                                <li class="catalog__item active">
+                        <div class="catalog-content-bottom-right">
+                            <ul class="catalog-content-bottom-right-list accordion">
+                                <li class="catalog-content-bottom-right-list__item active">
                                     <div class="accordion__header">
                                         <h3 class="title-low catalog__item__title">C 1400 по 1499 гг</h3>
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -458,9 +458,9 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="catalog__item">
+                                <li class="catalog-content-bottom-right-list__item">
                                     <div class="accordion__header">
-                                        <h3 class="title-low catalog__item__title">C 1500 по 1599 гг</h3>
+                                        <h3 class="title-low catalog-content-bottom-right-list__title">C 1500 по 1599 гг</h3>
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
                                             <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"/>
@@ -485,9 +485,9 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="catalog__item">
+                                <li class="catalog-content-bottom-right-list__item">
                                     <div class="accordion__header">
-                                    <h3 class="title-low catalog__item__title">C 1600 по 1699 гг</h3>
+                                    <h3 class="title-low catalog-content-bottom-right-list__title">C 1600 по 1699 гг</h3>
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
                                             <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"/>
@@ -512,9 +512,9 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="catalog__item">
+                                <li class="catalog-content-bottom-right-list__item">
                                     <div class="accordion__header">
-                                        <h3 class="title-low catalog__item__title">C 1700 по 1799 гг</h3>
+                                        <h3 class="title-low catalog-content-bottom-right-list__title">C 1700 по 1799 гг</h3>
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
                                             <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"/>
@@ -539,9 +539,9 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="catalog__item">
+                                <li class="catalog-content-bottom-right-list__item">
                                     <div class="accordion__header">
-                                        <h3 class="title-low catalog__item__title">C 1800 по 1899 гг</h3>
+                                        <h3 class="title-low catalog-content-bottom-right-list__title">C 1800 по 1899 гг</h3>
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
                                             <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"/>
@@ -566,9 +566,9 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="catalog__item">
+                                <li class="catalog-content-bottom-right-list__item">
                                     <div class="accordion__header">
-                                        <h3 class="title-low catalog__item__title">C 1900 по 1999 гг</h3>
+                                        <h3 class="title-low catalog-content-bottom-right-list__title">C 1900 по 1999 гг</h3>
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
                                             <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"/>
@@ -593,9 +593,9 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="catalog__item">
+                                <li class="catalog-content-bottom-right-list__item">
                                     <div class="accordion__header">
-                                        <h3 class="title-low catalog__item__title">C 2000 г</h3>
+                                        <h3 class="title-low catalog-content-bottom-right-list__title">C 2000 г</h3>
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
                                             <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"/>
@@ -626,9 +626,9 @@
                 </div>
             </div>
         </section>
-        <section class="events">
+        <section id="events" class="events">
             <div class="container">
-                <div class="events__content">
+                <div class="events-content">
                     <h2 class="title events__title">События</h2>
                     <div class="events-swiper">
                         <button class="events__btn events-prev swiper-button-prev" aria-label="К предыдущему слайду"></button>
@@ -740,18 +740,17 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section id="projects" class="projects">
             <div class="container">
                 <div class="projects__content">
                     <h2 class="title projects__title">Проекты</h2>
                     <div class="text projects__text">
-                        Предварительные выводы: постоянное информационно — пропагандистское обеспечение нашей 
+                        Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей 
                         деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые 
                         государства смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего 
-                        возрастает их&nbsp;статус бесполезности. Прежде всего, постоянное информационно — пропагандистское
-                        обеспечение
+                        возрастает их&nbsp;статус бесполезности. Прежде всего, постоянное информационно-пропагандистское
                         <button class="js-tooltip-btn" data-tippy-content="Пример современных тенденций — современная методология разработки"></button>
-                        нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. 
+                        обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. 
                         И&nbsp;нет&nbsp;сомнений, что действия представителей оппозиции могут быть рассмотрены
                         <button class="js-tooltip-btn" data-tippy-content="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции"></button>  
                         исключительно в&nbsp;разрезе маркетинговых и&nbsp;финансовых
@@ -801,7 +800,7 @@
                 </div>
             </div>
         </section>
-        <section class="contacts">
+        <section id="contacts" class="contacts">
             <div class="container">
                 <div class="contacts__content">
                     <div class="contacts__content-left">
@@ -860,7 +859,7 @@
             </div>
         </section>
         <div id="map"></div>
-        <footer class="footer">
+        <footer id="footer" class="footer">
             <div class="container">
                 <div class="footer__content">
                     <picture>
