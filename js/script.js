@@ -78,7 +78,7 @@ const params = {
 setMenuListener();
 
 document.addEventListener("DOMContentLoaded", () => {
-  let gallerySlider = new Swiper(".slides-container", {
+  let gallerySlider = new Swiper(".gallery-slides-container", {
     slidesPerView: 2,
     grid: {
       rows: 1,
@@ -86,13 +86,13 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     spaceBetween: 34,
     pagination: {
-      el: ".test-pagination",
+      el: ".gallery-pagination",
       type: "fraction"
     },
     slidesPerGroup: 3,
     navigation: {
-      nextEl: ".test-next",
-      prevEl: ".test-prev"
+      nextEl: ".gallery-next",
+      prevEl: ".gallery-prev"
     },
 
     breakpoints: {
@@ -333,9 +333,9 @@ document.querySelectorAll('.accordion__btn').forEach(function(tabsBtn){
     btn.classList.remove('accordion__btn--active')});
     e.currentTarget.classList.add('accordion__btn--active');
 
-    document.querySelectorAll('.catalog__wrapper').forEach(function(tabsBtn){
-    tabsBtn.classList.remove('catalog__wrapper--active')});
-    document.querySelector(`[data-target="${path}"]`).classList.add('catalog__wrapper--active');
+    document.querySelectorAll('.catalog-content-bottom-left-wrapper').forEach(function(tabsBtn){
+    tabsBtn.classList.remove('catalog-content-bottom-left-wrapper--active')});
+    document.querySelector(`[data-target="${path}"]`).classList.add('catalog-content-bottom-left-wrapper--active');
     });
 });
 
@@ -410,7 +410,7 @@ function setBurger(params) {
 
 setBurger({
   btnClass: "burger",
-  menuClass: "header-nav",
+  menuClass: "header-top-nav",
   activeClass: "is-opened",
   hiddenClass: "is-closed"
 });
@@ -487,3 +487,18 @@ const swiper = new Swiper('.js-hero-swiper', {
     delay: 10000
   }
 });
+
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}

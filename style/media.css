@@ -5,7 +5,7 @@
         padding: 0;
     }
 
-    .header-content-top {
+    .header-top {
         padding: 29px 0;
     }
 
@@ -103,7 +103,7 @@
         transform: translateY(-50%) rotate(-45deg);
     }
     
-    .header-nav {
+    .header-top-nav {
         position: fixed;
         left: 0;
         top: 0;
@@ -116,7 +116,7 @@
         transform: translateX(-100%);
     }
 
-    .header-menu {
+    .header-top-menu {
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -125,21 +125,21 @@
         overflow-y: auto;
     }
 
-    .header-list {
+    .header-top-list {
         display: block;
         max-height: 100%;
         margin: 0;
         margin-bottom: 120px;
     }
 
-    .header-nav.is-opened {
+    .header-top-nav.is-opened {
         display: block;
         transform: translateX(0);
         animation-name: menu-open;
         animation-duration: .3s;
     }
 
-    .header-nav.is-closed {
+    .header-top-nav.is-closed {
         animation-name: menu-close;
         animation-duration: .3s;
     }
@@ -162,16 +162,16 @@
         }
     }
 
-    .header-list__item:not(:last-child) {
+    .header-top-list__item:not(:last-child) {
         margin-right: 0;
         margin-bottom: 20px;
     }
 
-    .header-nav__button {
+    .header-top-nav__button {
         display: block;
     }
 
-    .header-nav__button {
+    .header-top-nav__button {
         position: relative;
         display: inline-flex;
         align-items: center;
@@ -187,40 +187,40 @@
         border-radius: 100px;
     }
     
-    .header__link:focus::after {
+    .header-top__link:focus::after {
         opacity: 1;
     }
     
-    .header-nav__button:hover {
+    .header-top-nav__button:hover {
         color: #C283F3;
     }
     
-    .header-nav__button:hover .header__arrow {
+    .header-top-nav__button:hover .header__arrow {
         fill: #C283F3;
     }
     
-    .header-nav__button:hover::after {
+    .header-top-nav__button:hover::after {
         opacity: 0;
     }
     
-    .header-nav__button:active {
+    .header-top-nav__button:active {
         color: #9D5CD0;
     }
     
-    .header-nav__button:active .header__arrow {
+    .header-top-nav__button:active .header__arrow {
         fill: #9D5CD0;
     }
 
-    .header-nav__button:hover .header__arrow-wrap {
+    .header-top-nav__button:hover .header__arrow-wrap {
         margin-left: -4px;
         padding-left: 4px;
     }
 
-    .header__link {
+    .header-top__link {
         display: none;
     }
 
-    .header-content-bottom {
+    .header-bottom {
         display: none;
     }
 
@@ -441,11 +441,11 @@
         z-index: 2;
     }
 
-    .header-logo {
+    .header-top-logo {
         margin-left: -8px;
     }
 
-    .header__button svg {
+    .header-top__button svg {
         width: 27px;
         height: 27px;
     }
@@ -675,7 +675,7 @@
         line-height: 32px;
     }
 
-    .header-content-top {
+    .header-top {
         padding: 11px 0 12px 0;
     }
 
@@ -710,11 +710,11 @@
         width: 25px;
     }
 
-    .header-nav {
+    .header-top-nav {
         padding: 60px 0 25px 15px;
     }
 
-    .header-nav__button {
+    .header-top-nav__button {
         font-size: 12px;
         padding: 10px 31px;
     }

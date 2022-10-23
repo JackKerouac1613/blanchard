@@ -123,7 +123,7 @@ button {
     z-index: 19;
 }
 
-.header-content-top {
+.header-top {
     background-color: var(--color-black);
     padding: 30px 0;
     z-index: 0;
@@ -140,27 +140,27 @@ button {
     align-items: center;
 }
 
-.header-logo {
+.header-top-logo {
     line-height: 0;
 }
 
-.header-nav {
+.header-top-nav {
     width: 62%;
 }
 
-.header-list {
+.header-top-list {
     display: flex;
 }
 
-.header-list__item {
+.header-top-list__item {
     position: relative;
 }
 
-.header-list__item:not(:last-child) {
+.header-top-list__item:not(:last-child) {
     margin-right: 62px;
 }
 
-.header-list__link {
+.header-top-list__link {
     position: relative;
     color: #ffffff;
     font-weight: 600;
@@ -170,7 +170,7 @@ button {
     z-index: 1;
 }
 
-.header-list__link::after {
+.header-top-list__link::after {
     content: "";
     position: absolute;
     top: 0;
@@ -183,31 +183,31 @@ button {
     transition: opacity .3s ease-in-out;
 }
 
-.header-list__link:focus-visible {
+.header-top-list__link:focus-visible {
     border: none;
 }
 
-.header-list__link:focus::after {
+.header-top-list__link:focus::after {
     opacity: 1;
 }
 
-.header-list__link:hover {
+.header-top-list__link:hover {
     color: #C283F3;
 }
 
-.header-list__link:hover::after {
+.header-top-list__link:hover::after {
     opacity: 0;
 }
 
-.header-list__link:active {
+.header-top-list__link:active {
     color: #7943A4;
 }
 
-.header-nav__button {
+.header-top-nav__button {
     display: none;
 }
 
-.header__link {
+.header-top__link {
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -219,7 +219,7 @@ button {
     line-height: 25px;
 }
 
-.header__link::after {
+.header-top__link::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -232,27 +232,27 @@ button {
     transition: opacity .3s ease-in-out;
 }
 
-.header__link:focus::after {
+.header-top__link:focus::after {
     opacity: 1;
 }
 
-.header__link:hover {
+.header-top__link:hover {
     color: #C283F3;
 }
 
-.header__link:hover .header__arrow {
+.header-top__link:hover .header__arrow {
     fill: #C283F3;
 }
 
-.header__link:hover::after {
+.header-top__link:hover::after {
     opacity: 0;
 }
 
-.header__link:active {
+.header-top__link:active {
     color: #9D5CD0;
 }
 
-.header__link:active .header__arrow {
+.header-top__link:active .header__arrow {
     fill: #9D5CD0;
 }
   
@@ -271,42 +271,42 @@ button {
     transition: fill .3s ease-in-out;
 }
   
-.header__link:hover .header__arrow-wrap {
+.header-top__link:hover .header__arrow-wrap {
     margin-left: -4px;
     padding-left: 4px;
 }
 
-.header__button {
+.header-top__button {
     display: none;
     line-height: 0;
     border: none;
     background-color: transparent;
 }
 
-.header__button svg {
+.header-top__button svg {
     fill: var(--color-white);
 }
 
-.header-content-bottom {
+.header-bottom {
     padding: 22px 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.header-list-bottom {
+.header-bottom-list {
     display: flex;
     align-items: center;
 }
 
-.header-list-bottom__item {
+.header-bottom-list__item {
     position: relative;
     color: gray;
 }
 
-.header-list-bottom__item:not(:last-child) {
+.header-bottom-list__item:not(:last-child) {
     margin-right: 101px;
 }
 
-.header-list-bottom__btn {
+.header-bottom-list__btn {
     position: relative;
     height: 100%;
     display: flex;
@@ -324,7 +324,7 @@ button {
     transition: color .3s ease-in-out;
 }
 
-.header-list-bottom__btn::before {
+.header-bottom-list__btn::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -337,23 +337,23 @@ button {
     transition: opacity .3s ease-in-out;
 }
 
-.header-list-bottom__btn:focus::before {
+.header-bottom-list__btn:focus::before {
     opacity: 1;
 }
   
-.header-list-bottom__btn:hover {
+.header-bottom-list__btn:hover {
     color: #9D5CD0;
 }
 
-.header-list-bottom__btn:hover::after {
+.header-bottom-list__btn:hover::after {
     border-color: #9D5CD0;
 }
 
-.header-list-bottom__btn:hover::before {
+.header-bottom-list__btn:hover::before {
     opacity: 0;
 }
   
-.header-list-bottom__btn::after {
+.header-bottom-list__btn::after {
     content: "";
     display: inline-block;
     width: 7px;
@@ -371,15 +371,15 @@ button {
     color: #7943A4;
 }
 
-.is-active.header-list-bottom__btn::after {
+.is-active.header-bottom-list__btn::after {
     border-color: #7943A4;
 }
 
-.is-active.header-list-bottom__btn::before {
+.is-active.header-bottom-list__btn::before {
     opacity: 0;
 }
   
-.header-list-bottom__btn.is-active::after {
+.header-bottom-list__btn.is-active::after {
     transform: rotate(-45deg) translateY(4px);
 }
 
@@ -437,7 +437,7 @@ button {
     max-height: 220px;
 }
   
-.header__item-link {
+.header__dropdown-link {
     position: relative;
     display: block;
     padding: 10px 15px;
@@ -449,7 +449,7 @@ button {
     transition: border-color .3s ease;
 }
   
-.header__item-link::before {
+.header__dropdown-link::before {
     content: "";
     position: absolute;
     top: 0;
@@ -465,13 +465,13 @@ button {
     position: relative;
 }
   
-.header__item-link:hover,
-.header__item-link:focus {
+.header__dropdown-link:hover,
+.header__dropdown-link:focus {
     outline: none;
     border-color: #9D5CD0;
 }
   
-.header__item-link:active::before {
+.header__dropdown-link:active::before {
     opacity: 1;
 }
   
@@ -849,12 +849,13 @@ button {
     border-width: 1px;
     border-color: var(--color-white);
     transform: rotate(45deg);
+    transition: transform .3s ease-in-out;
 }
 
 .choices[data-type*=select-one].is-open::after {
     border-color: var(--color-white);
     transform: rotate(-135deg);
-    margin-top: 0;
+    margin-top: -5px;
 }
 
 .choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
@@ -1241,7 +1242,7 @@ button {
 .accordion__content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height .3s ease-in-out;
+    transition: max-height .7s ease-in-out;
 }
 
 .accordion__content-wrapper {
@@ -1750,7 +1751,7 @@ button {
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
-    transition: outline .3s ease-in-out, bcakground-color .3s ease-in-out, color .3s ease-in-out;
+    transition: outline .3s ease-in-out, background-color .3s ease-in-out, color .3s ease-in-out;
 }
 
 .contacts__btn:focus {
