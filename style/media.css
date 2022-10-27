@@ -25,7 +25,7 @@
         outline: 2px solid var(--color-orange);
         outline-offset: 3px;
     }
-    
+
     .burger::before,
     .burger::after {
         content: "";
@@ -106,7 +106,7 @@
     .header-top-logo {
         margin-left: -5px;
     }
-    
+
     .header-top-nav {
         position: fixed;
         left: 0;
@@ -156,7 +156,7 @@
           transform: translateX(0);
         }
     }
-      
+
       @keyframes menu-close {
         from {
           transform: translateX(0);
@@ -190,27 +190,27 @@
         border: 2px solid #9D5CD0;
         border-radius: 100px;
     }
-    
+
     .header-top__link:focus::after {
         opacity: 1;
     }
-    
+
     .header-top-nav__button:hover {
         color: #C283F3;
     }
-    
+
     .header-top-nav__button:hover .header__arrow {
         fill: #C283F3;
     }
-    
+
     .header-top-nav__button:hover::after {
         opacity: 0;
     }
-    
+
     .header-top-nav__button:active {
         color: #9D5CD0;
     }
-    
+
     .header-top-nav__button:active .header__arrow {
         fill: #9D5CD0;
     }
@@ -260,15 +260,20 @@
         padding: 105px 0 115px 0;
     }
 
+    .hero__title {
+      width: 100%;
+    }
+
     .hero__text {
         width: 72%;
-        margin-bottom: 125px;
+        margin-bottom: 133px;
+        margin-top: -10px;
     }
 
     /** about **/
 
     .about__title {
-        margin-bottom: 16px;
+        margin-bottom: 15px;
     }
 
     .about__text {
@@ -285,7 +290,7 @@
         min-width: 280px;
     }
 
-    .gallery-swiper { 
+    .gallery-swiper {
         width: calc(100% - 330px);
     }
 
@@ -298,7 +303,8 @@
     }
 
     .gallery-list {
-        margin-bottom: 33px;
+        margin-bottom: 34px;
+        margin-left: -1px;
     }
 
     /** catalog **/
@@ -308,11 +314,15 @@
     }
 
     .catalog-content-top {
-        margin-bottom: 39px;
+        margin-bottom: 38px;
     }
 
     .catalog-content-bottom-left {
         width: 50%;
+    }
+
+    .catalog-content-bottom-left__img {
+      margin-bottom: 28px;
     }
 
     .catalog-content-bottom-left__title {
@@ -353,11 +363,11 @@
     }
 
     .events__item-content {
-        padding: 14px 34px 49px 34px;
+        padding: 14px 33px 49px 33px;
     }
 
     .events__item-content-top {
-        margin-bottom: 29px;
+        margin-bottom: 26px;
     }
 
     .events__time {
@@ -394,7 +404,7 @@
     /** projects **/
 
     #projects {
-        padding-top: 42px;
+        padding-top: 41px;
     }
 
     .projects__title {
@@ -411,7 +421,7 @@
 
     .projects__text {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 19px;
     }
 
     /** contacts **/
@@ -423,19 +433,20 @@
     .contacts__content {
         flex-direction: column;
         align-items: flex-start;
+        margin-left: -1px;
     }
 
     .contacts__content-left {
-        margin-bottom: 22px;
-    }
-
-    .contacts__address {
-        font-size: 14px;
+        margin-bottom: 23px;
     }
 
     .contacts__title {
-        margin-bottom: 5px;
+        margin-bottom: 4px;
     }
+
+    .contacts__address {
+      font-size: 14px;
+  }
 
     .contacts__content-middle {
         margin-bottom: 28px;
@@ -447,13 +458,13 @@
     }
 
     .contacts__btn {
-        padding: 10.5px 46px;
+        padding: 10.5px 41px;
     }
 
     /** footer **/
 
     #footer {
-        padding: 37px 0 41px 0;
+        padding: 38px 0 41px 0;
     }
 
     .footer__link svg {
@@ -500,11 +511,6 @@
 
     /** hero **/
 
-    .hero__title {
-        width: 100%;
-        font-size: 62px;
-    }
-
     .hero__text {
         width: 100%;
     }
@@ -512,7 +518,7 @@
     /** about **/
 
     .about__content {
-        padding: 94px 0 70px 0;
+        padding: 93px 0 70px 0;
     }
 
     .about__title {
@@ -529,16 +535,8 @@
         flex-direction: column;
     }
 
-    .gallery-title {
+    .gallery-content-left-top__title {
         margin-bottom: 29px;
-    }
-
-    .gallery-text {
-        margin-bottom: 10px;
-    }
-
-    .gallery-text {
-        margin-bottom: 14px;
     }
 
     .choices {
@@ -559,6 +557,7 @@
 
     .gallery-swiper {
         width: 100%;
+        padding-top: 6px;
     }
 
     .gallery-slide {
@@ -588,7 +587,7 @@
     }
 
     .catalog-content-top {
-        margin-bottom: 21px;
+        margin-bottom: 20px;
     }
 
     .catalog-content-top__title {
@@ -608,17 +607,23 @@
         width: 100%;
     }
 
+    .catalog-content-bottom-left__title {
+      margin-bottom: 8px;
+    }
+
     .catalog-content-bottom-left__date {
-        margin-bottom: 6px;
+        margin-bottom: 7px;
     }
 
     .catalog-content-bottom-right {
         width: 100%;
         margin-bottom: 50px;
+        margin-top: 0;
     }
 
     .accordion__list {
         column-count: 3;
+        padding: 42px 0;
     }
 
     /** events **/
@@ -632,29 +637,41 @@
     }
 
     .events__item-content {
-        padding: 14px 17px 49px 34px;
+        padding: 14px 17px 49px 33px;
+    }
+
+    .events__item-content-top {
+      margin-bottom: 27px;
+    }
+
+    .events__time {
+      margin-bottom: 4px;
     }
 
     .events__title-low {
-        width: 97%;
+        width: 96%;
     }
 
     .events__text {
         width: 91%;
     }
 
-    /** project **/ 
+    /** project **/
+
+    #projects {
+      padding-top: 54px;
+    }
 
     .project-container {
         max-height: 106px;
     }
 
     .projects__title {
-        margin-bottom: 30px;
+        margin-bottom: 39px;
     }
 
     .projects__text {
-        margin-bottom: 27px;
+        margin-bottom: 28px;
     }
 
     .projects__title-low {
@@ -692,7 +709,7 @@
     }
 
     .contacts__btn {
-        padding: 10.5px 33px;
+        padding: 10.5px 28px;
     }
 }
 
@@ -716,7 +733,7 @@
     }
 
     .header-top {
-        padding: 11px 0 12px 0;
+        padding: 11px 0 11px 0;
     }
 
     .burger {
@@ -733,13 +750,23 @@
         height: 2px;
     }
 
+    .burger::before {
+      margin-top: -1px;
+    }
+
     .burger::after {
         width: 10px;
+        margin-top: 0;
     }
 
     .burger.is-opened {
         width: 15px;
         height: 15px;
+    }
+
+    .header-top-logo {
+      margin-left: -6px;
+      margin-top: 1px;
     }
 
     .is-opened.burger::before {
@@ -764,11 +791,11 @@
         height: 9px;
     }
 
-    .header__button svg {
+    .header-top__button svg {
         width: 18px;
         height: 18px;
     }
-    
+
     .search-form-top {
         width: calc(100% - 30px);
         right: 15px;
@@ -788,7 +815,7 @@
     .search-form-top-line {
         width: 20px;
     }
-    
+
     .hero__content {
         display: flex;
         padding: 29px 13px 45px 13px;
@@ -802,7 +829,7 @@
         font-weight: 700;
         font-size: 32px;
         line-height: 44px;
-        margin-bottom: 3px;
+        margin-bottom: 2px;
     }
 
     .hero__text {
@@ -811,11 +838,12 @@
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
-        margin-bottom: 43px;
+        margin-bottom: 41px;
+        margin-top: 0;
     }
 
     .hero__btn {
-        padding: 12.5px 21.5px;
+        padding: 12.5px 19.5px 12.5px 20.5px;
         font-size: 12px;
         line-height: 16px;
     }
@@ -823,7 +851,7 @@
     /** about **/
 
     .about__content {
-        padding: 49px 0 41px 0;
+        padding: 50px 0 41px 0;
     }
 
     .about__title {
@@ -839,19 +867,19 @@
     /** gallery **/
 
     #gallery {
-        padding: 50px 0;
+        padding: 50px 0 49px 0;
     }
 
-    .gallery__content-left {
+    .gallery-content-left {
         margin-right: 0;
         margin-bottom: 30px;
     }
 
-    .gallery__title {
+    .gallery-content-left-top__title {
         margin-bottom: 13px;
     }
 
-    .gallery__text {
+    .gallery-content-left-top__text {
         margin-bottom: 4px;
     }
 
@@ -859,23 +887,24 @@
         margin-bottom: 31px;
     }
 
-    .gallery__list {
-        margin-bottom: -2px;
+    .gallery-list {
+        margin-bottom: -1px;
+        margin-left: 0;
     }
 
-    .test-swiper {
+    .gallery-swiper {
         padding: 0;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
     }
 
-    .test-navigation {
+    .gallery-navigation {
         margin-bottom: 0;
         margin-top: 20px;
     }
 
-    .test-slide {
+    .gallery-slide {
         min-height: 367px;
     }
 
@@ -885,27 +914,27 @@
 
     /** catalog **/
 
-    .catalog__content {
-        padding: 50px 0;
+    .catalog-content {
+        padding: 49px 0 50px 0;
     }
 
-    .catalog__content-top {
+    .catalog-content-top {
         margin-bottom: 12px;
     }
 
-    .catalog__content-bottom-left {
+    .catalog-content-bottom-left {
         margin-right: 0;
     }
 
-    .catalog__content-bottom-right {
+    .catalog-content-bottom-right {
         margin-bottom: 50px;
     }
 
-    .catalog__title {
+    .catalog-content-top__title {
         margin-bottom: 0;
     }
 
-    .catalog__text {
+    .catalog-content-top__text {
         display: none;
     }
 
@@ -937,19 +966,16 @@
         font-size: 15px;
     }
 
-    .catalog__content-bottom-left__title {
+    .catalog-content-bottom-left__img {
+      margin-bottom: 17px;
+  }
+
+    .catalog-content-bottom-left__title {
         font-size: 24px;
-    }
-
-    .catalog__img {
-        margin-bottom: 18px;
-    }
-
-    .catalog__content-bottom-left__title {
         margin-bottom: 8px;
     }
 
-    .catalog__content-bottom-left__date {
+    .catalog-content-bottom-left__date {
         margin-bottom: 13px;
     }
 
@@ -968,11 +994,11 @@
     }
 
     .events__item-content-top {
-        margin-bottom: 20px;
+        margin-bottom: 52px;
     }
 
     .events__time {
-        margin-bottom: 10px;
+        margin-bottom: 11px;
     }
 
     .events__title-low {
@@ -994,8 +1020,12 @@
 
     /**project **/
 
+    #projects {
+      padding-top: 0;
+    }
+
     .projects__content {
-        padding-bottom: 48px;
+        padding-bottom: 47px;
     }
 
     .projects__title {
@@ -1003,7 +1033,7 @@
     }
 
     .projects__text {
-        margin-bottom: 51px;
+        margin-bottom: 50px;
     }
 
     .projects__title-low {
@@ -1035,7 +1065,7 @@
     }
 
     .contacts__content-middle {
-        margin-bottom: 20px;
+        margin-bottom: 21px;
     }
 
     .contacts__label {
@@ -1063,6 +1093,7 @@
 
     .contacts__content-right-title {
         margin-bottom: 7px;
+        font-weight: 400;
     }
 
     .contacts-list__link svg {
