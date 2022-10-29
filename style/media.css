@@ -45,8 +45,8 @@
     }
 
     .burger::before {
-        margin-top: -5px;
-        transform: translateY(calc(-100% - 6px));
+      margin-top: -1px;
+        transform: translateY(calc(-100% - 9px));
     }
 
     .burger span {
@@ -56,9 +56,9 @@
     }
 
     .burger::after {
-        margin-top: 3px;
         width: 24px;
-        transform: translateY(calc(100% + 5px));
+        margin-top: -1px;
+        transform: translateY(calc(100% + 9px));
     }
 
     .burger:active {
@@ -103,11 +103,11 @@
         transform: translateY(-50%) rotate(-45deg);
     }
 
-    .header-top-logo {
+    .header-top__logo {
         margin-left: -5px;
     }
 
-    .header-top-nav {
+    .header-top__nav {
         position: fixed;
         left: 0;
         top: 0;
@@ -120,7 +120,7 @@
         transform: translateX(-100%);
     }
 
-    .header-top-menu {
+    .header-top__menu {
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -129,21 +129,21 @@
         overflow-y: auto;
     }
 
-    .header-top-list {
+    .header-top__list {
         display: block;
         max-height: 100%;
         margin: 0;
         margin-bottom: 120px;
     }
 
-    .header-top-nav.is-opened {
+    .header-top__nav.is-opened {
         display: block;
         transform: translateX(0);
         animation-name: menu-open;
         animation-duration: .3s;
     }
 
-    .header-top-nav.is-closed {
+    .header-top__nav.is-closed {
         animation-name: menu-close;
         animation-duration: .3s;
     }
@@ -166,7 +166,7 @@
         }
     }
 
-    .header-top-list__item:not(:last-child) {
+    .header-top__item:not(:last-child) {
         margin-right: 0;
         margin-bottom: 20px;
     }
@@ -175,7 +175,7 @@
         display: block;
     }
 
-    .header-top-nav__button {
+    .header-top__nav-button {
         position: relative;
         display: inline-flex;
         align-items: center;
@@ -195,32 +195,32 @@
         opacity: 1;
     }
 
-    .header-top-nav__button:hover {
+    .header-top__nav-button:hover {
         color: #C283F3;
     }
 
-    .header-top-nav__button:hover .header__arrow {
+    .header-top__nav-button:hover .header-top__arrow {
         fill: #C283F3;
     }
 
-    .header-top-nav__button:hover::after {
+    .header-top__nav-button:hover::after {
         opacity: 0;
     }
 
-    .header-top-nav__button:active {
+    .header-top__nav-button:active {
         color: #9D5CD0;
     }
 
-    .header-top-nav__button:active .header__arrow {
+    .header-top__nav-button:active .header-top__arrow {
         fill: #9D5CD0;
     }
 
-    .header-top-nav__button:hover .header__arrow-wrap {
+    .header-top__nav-button:hover .header-top__arrow-wrap {
         margin-left: -4px;
         padding-left: 4px;
     }
 
-    .header-top__link {
+    .header-top__link-search {
         display: none;
     }
 
@@ -488,23 +488,23 @@
     /** header **/
 
     .search-form-top {
-        width: calc(100% - 100px);
+        width: calc(100% - 99px);
         height: 100%;
         align-items: center;
         background-color: #000000;
         z-index: 2;
     }
 
-    .header-top-logo {
+    .header-top__logo {
         margin-left: -8px;
     }
 
-    .header-top__button svg {
+    .header-top__button-pic {
         width: 27px;
         height: 27px;
     }
 
-    .search-form-top__send svg {
+    .search-form-top__send-pic {
         width: 26px;
         height: 26px;
     }
@@ -751,12 +751,12 @@
     }
 
     .burger::before {
-      margin-top: -1px;
+      transform: translateY(calc(-100% - 6px));
     }
 
     .burger::after {
         width: 10px;
-        margin-top: 0;
+        transform: translateY(calc(-100% + 10px));
     }
 
     .burger.is-opened {
@@ -764,7 +764,7 @@
         height: 15px;
     }
 
-    .header-top-logo {
+    .header-top__logo {
       margin-left: -6px;
       margin-top: 1px;
     }
@@ -777,21 +777,21 @@
         width: 25px;
     }
 
-    .header-top-nav {
+    .header-top__nav {
         padding: 60px 0 25px 15px;
     }
 
-    .header-top-nav__button {
+    .header-top__nav-button {
         font-size: 12px;
         padding: 10px 31px;
     }
 
-    .header__arrow {
+    .header-top__arrow {
         width: 14px;
         height: 9px;
     }
 
-    .header-top__button svg {
+    .header-top__button-pic {
         width: 18px;
         height: 18px;
     }
@@ -801,7 +801,7 @@
         right: 15px;
     }
 
-    .search-form-top__send svg {
+    .search-form-top__send-pic {
         width: 16px;
         height: 16px;
     }
@@ -814,6 +814,7 @@
 
     .search-form-top-line {
         width: 20px;
+        height: 2px;
     }
 
     .hero__content {

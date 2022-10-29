@@ -26,7 +26,7 @@ const params = {
     activeClassName: "is-active",
     disabledClassName: "is-disabled"
   };
-  
+
   function onDisable(evt) {
     if (evt.target.classList.contains(params.disabledClassName)) {
       evt.target.classList.remove(
@@ -36,13 +36,13 @@ const params = {
       evt.target.removeEventListener("animationend", onDisable);
     }
   }
-  
+
   function setMenuListener() {
     document.body.addEventListener("click", (evt) => {
       const activeElements = document.querySelectorAll(
         `.${params.btnClassName}.${params.activeClassName}, .${params.dropClassName}.${params.activeClassName}`
       );
-  
+
       if (
         activeElements.length &&
         !evt.target.closest(`.${params.activeClassName}`)
@@ -55,16 +55,16 @@ const params = {
           }
         });
       }
-  
+
       if (evt.target.closest(`.${params.btnClassName}`)) {
         const btn = evt.target.closest(`.${params.btnClassName}`);
         const path = btn.dataset.path;
         const drop = document.querySelector(
           `.${params.dropClassName}[data-target="${path}"]`
         );
-  
+
         btn.classList.toggle(params.activeClassName);
-  
+
         if (!drop.classList.contains(params.activeClassName)) {
           drop.classList.add(params.activeClassName);
           drop.addEventListener("animationend", onDisable);
@@ -74,7 +74,7 @@ const params = {
       }
     });
 }
-  
+
 setMenuListener();
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -344,12 +344,12 @@ function init() {
   const mapElem = document.querySelector('#map');
   const myMap = new ymaps.Map(
     "map",
-    { 
-      center: [55.75846806898367, 37.60108849999989], 
-      zoom: 14, 
+    {
+      center: [55.75846806898367, 37.60108849999989],
+      zoom: 14,
       controls: ['geolocationControl', 'zoomControl']
     },
-    { 
+    {
       suppressMapOpenBlock: true,
       geolocationControlSize: "large",
       geolocationControlPosition:  { top: "200px", right: "20px" },
@@ -359,7 +359,7 @@ function init() {
       zoomControlPosition: { top: "120px", right: "20px" }
     }
   );
-  
+
   myMap.behaviors.disable('scrollZoom');
 
   const myPlacemark = new ymaps.Placemark(
@@ -380,7 +380,7 @@ function init() {
 function setBurger(params) {
   const btn = document.querySelector(`.${params.btnClass}`);
   const menu = document.querySelector(`.${params.menuClass}`);
-  
+
   btn.setAttribute('aria-expanded', false);
 
   menu.addEventListener("animationend", function () {
@@ -410,7 +410,7 @@ function setBurger(params) {
 
 setBurger({
   btnClass: "burger",
-  menuClass: "header-top-nav",
+  menuClass: "header-top__nav",
   activeClass: "is-opened",
   hiddenClass: "is-closed"
 });
@@ -429,7 +429,7 @@ function setSearch(params) {
       this._isOpened = true;
     }
   });
-  
+
   search.addEventListener('click', function(evt) {
     evt._isSearch = true;
   });
@@ -444,12 +444,12 @@ function setSearch(params) {
       search.classList.add(params.activeClass);
     }
   });
-  
+
   closeBtn.addEventListener('click', function () {
     openBtn.disabled = false;
     search.classList.add(params.hiddenClass);
   });
-  
+
   document.body.addEventListener('click', function (evt) {
     if (!evt._isSearch && search._isOpened) {
       openBtn.disabled = false;
@@ -493,9 +493,9 @@ const anchors = document.querySelectorAll('a[href*="#"]')
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (e) {
     e.preventDefault()
-    
+
     const blockID = anchor.getAttribute('href').substr(1)
-    
+
     document.getElementById(blockID).scrollIntoView({
       behavior: 'smooth',
       block: 'start'
