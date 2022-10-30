@@ -10,7 +10,7 @@ html {
 *::before,
 *::after {
 	box-sizing: inherit;
-    font-family: 'Open Sans', 'sans-serif';
+  font-family: 'Open Sans', 'sans-serif';
 }
 
 :root {
@@ -56,34 +56,32 @@ html {
 	font-style: normal;
 }
 
-ul {
+.list-reset {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-a {
+.link-reset {
     color: var(--color-black);
     text-decoration: none;
 }
 
-p {
+.text-reset {
     margin: 0;
 }
 
-h1,
-h2,
-h3 {
+.title-reset {
     margin: 0;
 }
 
-img {
+.img-reset {
     margin: 0;
     padding: 0;
     border: none;
 }
 
-button {
+.btn-reset {
     padding: 0;
 }
 
@@ -1398,7 +1396,7 @@ button {
     transform: rotate(45deg);
 }
 
-.events_btn.swiper-button-disabled{
+.events__btn.swiper-button-disabled{
     display: none;
 }
 
@@ -1696,7 +1694,6 @@ button {
 }
 
 .projects__img {
-    position: absolute;
     filter: grayscale(100%) opacity(0.3);
     transition: filter .3s ease-in-out;
 }
