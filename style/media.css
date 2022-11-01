@@ -261,7 +261,7 @@
     }
 
     .hero__title {
-      width: 100%;
+      width: 89%;
     }
 
     .hero__text {
@@ -510,6 +510,10 @@
     }
 
     /** hero **/
+
+    .hero__title {
+      font-size: calc( (100vw - 670px)/(960 - 670) * (72 - 62) + 63px);
+    }
 
     .hero__text {
         width: 100%;
