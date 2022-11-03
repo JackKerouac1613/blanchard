@@ -444,6 +444,7 @@ tippy('.js-tooltip-btn', {
   theme: 'purple',
   maxWidth: 264,
   moveTransition: 'transform 0.3s ease-out',
+  trigger: 'click'
 });
 
 const swiper = new Swiper('.js-hero-swiper', {

@@ -1289,6 +1289,7 @@ html {
     border: none;
     background-color: transparent;
     text-align: start;
+    color: var(--color-black-light);
 }
 
 .accordion__btn::before {
@@ -1333,8 +1334,8 @@ html {
     opacity: 0;
 }
 
-.accordion__btn--active::after {
-  opacity: 1;
+.accordion__btn--active {
+  color: var(--color-black);
 }
 
 .accordion__content-wrapper {
@@ -1626,6 +1627,8 @@ html {
     background-color: #9D5CD0;
     color: #ffffff;
     text-align: center;
+    border-radius: 0;
+    padding: 5px;
 }
 
 .tippy-box[data-theme~='purple'][data-placement^='top'] > .tippy-arrow::before {
