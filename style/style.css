@@ -1628,7 +1628,10 @@ html {
     color: #ffffff;
     text-align: center;
     border-radius: 0;
-    padding: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 4px;
 }
 
 .tippy-box[data-theme~='purple'][data-placement^='top'] > .tippy-arrow::before {
